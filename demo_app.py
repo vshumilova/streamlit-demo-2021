@@ -1,6 +1,7 @@
 import streamlit as st
 import matplotlib.pyplot as plt
 import numpy as np
+import zipfile
 
 with st.echo(code_location='below'):
     st.title("Hello, World!")
@@ -12,3 +13,8 @@ with st.echo(code_location='below'):
     plt.plot(x, np.sin(x))
     plt.ylim(-2, 2)
     st.pyplot(fig)
+
+    z = zipfile.ZipFile('20.zip', 'r')
+    m = z.extract('20.csv')
+    flights20 = pd.read_csv(m)
+    flights20.head(5)
