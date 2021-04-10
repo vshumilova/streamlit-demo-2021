@@ -2,6 +2,7 @@ import streamlit as st
 import matplotlib.pyplot as plt
 import numpy as np
 import zipfile
+import pandas as pd
 
 with st.echo(code_location='below'):
     st.title("Hello, World!")
@@ -14,7 +15,16 @@ with st.echo(code_location='below'):
     plt.ylim(-2, 2)
     st.pyplot(fig)
 
-    z = zipfile.ZipFile('20.zip', 'r')
+    """"
+    Open:
+    """
+    z = zipfile.ZipFile('20.csv.zip', 'r')
     m = z.extract('20.csv')
+
+    st.markdown("Let's look at this fine dataset""")
+
     flights20 = pd.read_csv(m)
     flights20.head(5)
+    """
+    Chek
+    """
