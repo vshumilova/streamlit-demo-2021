@@ -5,9 +5,9 @@ import zipfile
 import pandas as pd
 
 with st.echo(code_location='below'):
-    st.title("Приветствую!")
+    st.title("Приветствую! Это приложение показывает все полеты в августе 2018 года.")
     """
-    This is a test.
+    Если вы боитесь летать или просто хотите посмотреть на статистику мировой авиации за 1 месяц, то Welcome :)
     """
     x = np.linspace(0, 10, 500)
     fig = plt.figure()
