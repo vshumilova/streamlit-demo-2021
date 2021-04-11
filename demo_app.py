@@ -18,15 +18,15 @@ with st.echo(code_location='below'):
     """"
     Open:
     """
-    z = zipfile.ZipFile('flights_aug_2018.zip', 'r')
-    m = z.extract('flights_aug_2018.csv')
+ #   z = zipfile.ZipFile('flights_aug_2018.zip', 'r')
+ #   m = z.extract('flights_aug_2018.csv')
 
 
     st.markdown("Let's look at this fine dataset""")
 
-    flights = pd.read_csv(m)
-    flights.head(5)
-    st.dataframe(flights, 5)
+ #   flights = pd.read_csv(m)
+ #   flights.head(5)
+#    st.dataframe(flights, 5)
 
     
     """
