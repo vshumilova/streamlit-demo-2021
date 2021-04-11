@@ -5,7 +5,7 @@ import zipfile
 import pandas as pd
 
 with st.echo(code_location='below'):
-    st.title("Hello, World!")
+    st.title("Приветствую!")
     """
     This is a test.
     """
